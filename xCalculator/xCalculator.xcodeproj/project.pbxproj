@@ -13,6 +13,8 @@
 		E21E3B362518BEBB00A62CA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21E3B342518BEBB00A62CA6 /* Main.storyboard */; };
 		E21E3B382518BEBD00A62CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21E3B372518BEBD00A62CA6 /* Assets.xcassets */; };
 		E21E3B3B2518BEBD00A62CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21E3B392518BEBD00A62CA6 /* LaunchScreen.storyboard */; };
+		E21E3B432518BF7700A62CA6 /* Calculadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E3B422518BF7700A62CA6 /* Calculadora.swift */; };
+		E21E3B452518C02700A62CA6 /* ProtocolCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E3B442518C02700A62CA6 /* ProtocolCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E21E3B372518BEBD00A62CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E21E3B3A2518BEBD00A62CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E21E3B3C2518BEBD00A62CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E21E3B422518BF7700A62CA6 /* Calculadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora.swift; sourceTree = "<group>"; };
+		E21E3B442518C02700A62CA6 /* ProtocolCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				E21E3B302518BEBB00A62CA6 /* SceneDelegate.swift */,
 				E21E3B322518BEBB00A62CA6 /* ViewController.swift */,
 				E21E3B342518BEBB00A62CA6 /* Main.storyboard */,
+				E21E3B422518BF7700A62CA6 /* Calculadora.swift */,
+				E21E3B442518C02700A62CA6 /* ProtocolCalculator.swift */,
 				E21E3B372518BEBD00A62CA6 /* Assets.xcassets */,
 				E21E3B392518BEBD00A62CA6 /* LaunchScreen.storyboard */,
 				E21E3B3C2518BEBD00A62CA6 /* Info.plist */,
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21E3B332518BEBB00A62CA6 /* ViewController.swift in Sources */,
+				E21E3B452518C02700A62CA6 /* ProtocolCalculator.swift in Sources */,
 				E21E3B2F2518BEBB00A62CA6 /* AppDelegate.swift in Sources */,
 				E21E3B312518BEBB00A62CA6 /* SceneDelegate.swift in Sources */,
+				E21E3B432518BF7700A62CA6 /* Calculadora.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
