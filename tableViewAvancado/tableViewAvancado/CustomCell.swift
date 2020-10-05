@@ -8,11 +8,10 @@
 import UIKit
 
 class CustomCell: UITableViewCell {
+    @IBOutlet var labelName: UILabel!
+    @IBOutlet var labelEmail: UILabel!
+    @IBOutlet var imageDev: UIImageView!
 
-    @IBOutlet weak var labelName: UILabel!
-    @IBOutlet weak var labelEmail: UILabel!
-    @IBOutlet weak var imageDev: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,12 +22,11 @@ class CustomCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    func setup(dev: Devs){
+
+    func setup(dev: Devs) {
         labelName.text = dev.nome
         labelEmail.text = dev.email
         imageDev.image = UIImage(named: dev.image)
         imageDev.layer.cornerRadius = 30
     }
-
 }
