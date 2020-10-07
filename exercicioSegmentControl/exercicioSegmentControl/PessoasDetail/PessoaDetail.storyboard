@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SeI-qp-oX0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pessoa Detail View Controller-->
+        <scene sceneID="nri-SJ-k3d">
+            <objects>
+                <viewController id="SeI-qp-oX0" customClass="PessoaDetailViewController" customModule="exercicioSegmentControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eLM-py-J4n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUe-nM-jrE">
+                                <rect key="frame" x="28" y="100" width="47" height="30"/>
+                                <state key="normal" title="Fechar"/>
+                                <connections>
+                                    <action selector="actionButtonClose:" destination="SeI-qp-oX0" eventType="touchUpInside" id="Aos-fK-9kk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY7-3t-DMA">
+                                <rect key="frame" x="16" y="209" width="382" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="2jf-XX-em4"/>
+                                    <constraint firstAttribute="height" constant="21" id="Uzg-7d-exi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3V6-Yb-ol5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3V6-Yb-ol5" firstAttribute="trailing" secondItem="LY7-3t-DMA" secondAttribute="trailing" constant="16" id="MSD-wr-hG0"/>
+                            <constraint firstItem="3V6-Yb-ol5" firstAttribute="bottom" secondItem="LY7-3t-DMA" secondAttribute="bottom" constant="632" id="O3b-JF-bKs"/>
+                            <constraint firstItem="LY7-3t-DMA" firstAttribute="leading" secondItem="3V6-Yb-ol5" secondAttribute="leading" constant="16" id="Qab-CC-Tar"/>
+                            <constraint firstItem="LY7-3t-DMA" firstAttribute="top" secondItem="pUe-nM-jrE" secondAttribute="bottom" constant="79" id="VnL-e0-3de"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelNome" destination="LY7-3t-DMA" id="cde-ol-hA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qks-JO-vZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279.71014492753625" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
