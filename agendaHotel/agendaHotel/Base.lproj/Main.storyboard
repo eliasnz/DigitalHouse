@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="agendaHotel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpA-c7-HSe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qF6-Tb-bId">
+                                <rect key="frame" x="0.0" y="64.5" width="414" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAd-KP-D6a">
+                                <rect key="frame" x="0.0" y="280.5" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="R4l-Yn-m3J">
+                                <rect key="frame" x="0.0" y="301.5" width="414" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward client?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWo-d4-5aM">
+                                <rect key="frame" x="0.0" y="517.5" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jZz-6E-PZq">
+                                <rect key="frame" x="184" y="548.5" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="A1E-D1-ztc"/>
+                                    <constraint firstAttribute="height" constant="31" id="MFO-qB-F6m"/>
+                                </constraints>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bW8-HD-bvc">
+                                <rect key="frame" x="0.0" y="589.5" width="414" height="30"/>
+                                <state key="normal" title="Best hotel"/>
+                                <connections>
+                                    <action selector="actionButtonBest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4N-67-svZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSP-qf-QpQ">
+                                <rect key="frame" x="0.0" y="690" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qF6-Tb-bId" firstAttribute="top" secondItem="BpA-c7-HSe" secondAttribute="bottom" id="0L7-PG-JLY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xAd-KP-D6a" secondAttribute="trailing" id="0wg-lg-ygQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sWo-d4-5aM" secondAttribute="trailing" id="5bj-zC-sHS"/>
+                            <constraint firstAttribute="trailing" secondItem="R4l-Yn-m3J" secondAttribute="trailing" id="7xG-IV-2yw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jZz-6E-PZq" secondAttribute="trailing" constant="183" id="Dsl-dP-Efc"/>
+                            <constraint firstItem="xAd-KP-D6a" firstAttribute="top" secondItem="qF6-Tb-bId" secondAttribute="bottom" id="Enk-bQ-fnb"/>
+                            <constraint firstItem="BpA-c7-HSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IiE-g6-g80"/>
+                            <constraint firstItem="bW8-HD-bvc" firstAttribute="top" secondItem="jZz-6E-PZq" secondAttribute="bottom" constant="10" id="KYL-72-5yo"/>
+                            <constraint firstItem="jZz-6E-PZq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="KYP-lM-qfd"/>
+                            <constraint firstItem="xAd-KP-D6a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KjP-Ec-a8d"/>
+                            <constraint firstItem="R4l-Yn-m3J" firstAttribute="top" secondItem="xAd-KP-D6a" secondAttribute="bottom" id="MJu-VL-khG"/>
+                            <constraint firstItem="MSP-qf-QpQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NQI-S4-rra"/>
+                            <constraint firstItem="sWo-d4-5aM" firstAttribute="top" secondItem="R4l-Yn-m3J" secondAttribute="bottom" id="QBh-Dn-OHl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MSP-qf-QpQ" secondAttribute="trailing" id="SfG-PA-n0Y"/>
+                            <constraint firstItem="bW8-HD-bvc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WV6-0Z-uhd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bW8-HD-bvc" secondAttribute="trailing" id="atf-HY-oec"/>
+                            <constraint firstItem="sWo-d4-5aM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bII-kn-HOc"/>
+                            <constraint firstAttribute="trailing" secondItem="qF6-Tb-bId" secondAttribute="trailing" id="iXL-oo-ogm"/>
+                            <constraint firstItem="R4l-Yn-m3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jGh-nx-K04"/>
+                            <constraint firstItem="qF6-Tb-bId" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lns-0V-VLN"/>
+                            <constraint firstItem="BpA-c7-HSe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m65-kp-acg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BpA-c7-HSe" secondAttribute="trailing" id="rrW-lA-Xkz"/>
+                            <constraint firstItem="jZz-6E-PZq" firstAttribute="top" secondItem="sWo-d4-5aM" secondAttribute="bottom" constant="10" id="uug-sw-tiz"/>
+                            <constraint firstItem="MSP-qf-QpQ" firstAttribute="top" secondItem="bW8-HD-bvc" secondAttribute="bottom" constant="70.5" id="zlk-XV-BgN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkInDate" destination="qF6-Tb-bId" id="dcY-D4-24q"/>
+                        <outlet property="checkOutDate" destination="R4l-Yn-m3J" id="1pb-5k-bw7"/>
+                        <outlet property="labelResultado" destination="MSP-qf-QpQ" id="ZCT-Ju-aMT"/>
+                        <outlet property="switchTipoCliente" destination="jZz-6E-PZq" id="SQc-XH-6ID"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
