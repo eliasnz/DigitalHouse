@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum diaSemana {
+enum WeekDay {
     static let Sunday = 1
     static let Monday = 2
     static let Tuesday = 3
@@ -17,13 +17,13 @@ enum diaSemana {
     static let Saturday = 7
 }
 
+
 class ViewController: UIViewController {
     
     var arrayHotel = [Hotel]()
     
-    var resultadoHotel: [String: Double] = [:]
+    var mapHotel: [String: Double] = [:]
     
-    var tipo = "N"
     
     @IBOutlet weak var checkInDate: UIDatePicker!
     
@@ -34,13 +34,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelResultado: UILabel!
     
     @IBAction func actionButtonBest(_ sender: Any) {
-        if switchTipoCliente.isOn {
-             tipo = "E"
-        } else {
-             tipo = "N"
-        }
+
         
-        let resultadoHotel = valorHospedagem(dataIni: checkInDate.date, dataFim: checkOutDate.date, tipoCliente: tipo, arrayhotel: arrayHotel)
+        let resultadoHotel = valorHospedagem(dataIni: checkInDate.date, dataFim: checkOutDate.date, arrayhotel: arrayHotel)
         
         labelResultado.text = resultadoHotel
 
@@ -57,7 +53,7 @@ class ViewController: UIViewController {
         
     }
 
-    func valorHospedagem(dataIni: Date, dataFim: Date, tipoCliente: String, arrayhotel: [Hotel]) -> String{
+    func valorHospedagem(dataIni: Date, dataFim: Date, arrayhotel: [Hotel]) -> String{
     
         var valorTotal = 0.0
         
@@ -69,14 +65,14 @@ class ViewController: UIViewController {
                 let datas = Calendar.current.component(.weekday, from: mData)
 
 
-                if datas == diaSemana.Saturday || datas == diaSemana.Sunday {
-                    if tipoCliente == "N" {
+                if datas == WeekDay.Saturday || datas == WeekDay.Sunday {
+                    if !switchTipoCliente.isOn {
                         valorTotal = valorTotal + hotel.valorFinalSemanaClienteNormal
                     } else {
                         valorTotal = valorTotal + hotel.valorFinalSemanaClienteEspecial
                     }
                 } else {
-                    if tipoCliente == "N" {
+                    if !switchTipoCliente.isOn {
                         valorTotal = valorTotal + hotel.valorSemanaClienteNormal
                     } else {
                         valorTotal = valorTotal + hotel.valorSemanaClienteEspecial
@@ -86,11 +82,11 @@ class ViewController: UIViewController {
             }
 
         
-        resultadoHotel[hotel.nome] = valorTotal
+        mapHotel[hotel.nome] = valorTotal
         
       }
         
-        let hues = resultadoHotel
+        let hues = mapHotel
         let greatestHue = hues.max { a, b in a.value > b.value }
         
 
